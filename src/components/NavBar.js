@@ -13,27 +13,17 @@ const NavBar = () => {
     return (
         <nav className="flex items-center justify-between p-5">
             <div>
-                <Link>
+                <Link to="/home">
                     <img src={logo} alt="logo" />
                 </Link>
             </div>
 
             <div className="hidden md:flex md:gap-[10px]">
-                <NavLink to="/" activeClassName="active">
-                    Home
-                </NavLink>
-                <NavLink to="/" activeClassName="active">
-                    New
-                </NavLink>
-                <NavLink to="/" activeClassName="active">
-                    Popular
-                </NavLink>
-                <NavLink to="/" activeClassName="active">
-                    Trending
-                </NavLink>
-                <NavLink to="/" activeClassName="active">
-                    Categories
-                </NavLink>
+                <NavLink to="/home">Home</NavLink>
+                <NavLink to="/">New</NavLink>
+                <NavLink to="/">Popular</NavLink>
+                <NavLink to="/">Trending</NavLink>
+                <NavLink to="/">Categories</NavLink>
             </div>
 
             <div
@@ -44,7 +34,7 @@ const NavBar = () => {
             </div>
 
             <div
-                className={`absolute right-0 bg-white shadow-2xl top-0 w-[50vh] h-screen overflow-hidden transition-all duration-300
+                className={`absolute right-0 bg-white shadow-2xl top-0 w-[60vw] h-screen overflow-hidden transition-all duration-300 ease-in-out md:hidden
             ${isOpen ? "right-0" : "right-[-100%]"}`}
             >
                 <img
@@ -53,20 +43,20 @@ const NavBar = () => {
                     alt="hamburger-menu-close"
                     onClick={handleClick}
                 />
-                <div className="flex flex-col justify-center gap-[20px] mt-[20vh] p-5 font-normal text-lg text-dark-grayish-blue">
-                    <NavLink to="/" activeClassName="active">
+                <div className="flex flex-col justify-center gap-[20px] mt-[20vh] p-5 font-normal text-lg text-dark-grayish-blue md:hidden">
+                    <NavLink to="/home" onClick={handleClick}>
                         Home
                     </NavLink>
-                    <NavLink to="/" activeClassName="active">
+                    <NavLink to="/" onClick={handleClick}>
                         New
                     </NavLink>
-                    <NavLink to="/" activeClassName="active">
+                    <NavLink to="/" onClick={handleClick}>
                         Popular
                     </NavLink>
-                    <NavLink to="/" activeClassName="active">
+                    <NavLink to="/" onClick={handleClick}>
                         Trending
                     </NavLink>
-                    <NavLink to="/" activeClassName="active">
+                    <NavLink to="/" onClick={handleClick}>
                         Categories
                     </NavLink>
                 </div>

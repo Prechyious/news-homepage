@@ -4,7 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+* {
     font-family: "Inter", sans-serif;
-    @apply bg-off-white;
+}
+
+body {
+    @apply bg-off-white overflow-x-hidden;
+}
+
+a {
+    @apply hover:text-soft-red active:text-soft-red transition-colors duration-300 ease-in-out;
 }
