@@ -15,3 +15,7 @@ body {
 a {
     @apply hover:text-soft-red active:text-soft-red transition-colors duration-300 ease-in-out;
 }
+
+p {
+    @apply text-base;
+}
