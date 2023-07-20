@@ -75,7 +75,7 @@ const Main = () => {
                         <h3 className="font-extrabold text-very-dark-blue">
                             Reviving Retro PCs
                         </h3>
-                        <p className="text-grayish-blue text-[15px] leading-6">
+                        <p className="text-grayish-blue text-[15px] font-medium">
                             What happens when old PCs are given modern upgrades?
                         </p>
                     </div>
@@ -95,7 +95,7 @@ const Main = () => {
                         <h3 className="font-extrabold text-very-dark-blue">
                             Top 10 Laptops of 2022
                         </h3>
-                        <p className="text-grayish-blue text-[15px] font-normal">
+                        <p className="text-grayish-blue text-[15px] font-medium">
                             Our best picks for various needs and budgets.
                         </p>
                     </div>
@@ -115,7 +115,7 @@ const Main = () => {
                         <h3 className="font-extrabold text-very-dark-blue">
                             The Growth of Gaming
                         </h3>
-                        <p className="text-grayish-blue text-[15px] font-normal">
+                        <p className="text-grayish-blue text-[15px] font-medium">
                             How the pandemic has sparked fresh opportunities.
                         </p>
                     </div>
