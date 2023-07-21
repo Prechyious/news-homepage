@@ -24,10 +24,7 @@ const NavBar = () => {
                 <NavLink to="/">Trending</NavLink>
                 <NavLink to="/">Categories</NavLink>
             </div>
-            <div
-                className="cursor-pointer flex lg:hidden"
-                onClick={handleClick}
-            >
+            <div className="cursor-pointer lg:hidden" onClick={handleClick}>
                 <img src={hamburgerMenu} alt="hamburger-menu" />
             </div>
 
@@ -35,10 +32,10 @@ const NavBar = () => {
                 className={`absolute right-0 bg-white
                 ${
                     isOpen
-                        ? "shadow-[-100px_2px_2px_200px_#00000065]"
+                        ? "shadow-[-100px_2px_2px_200px_#00000085]"
                         : "shadow-none"
                 }  top-0 w-[60vw] h-screen overflow-hidden transition-all duration-300 ease-in-out lg:hidden
-            ${isOpen ? "right-0" : "right-[-120%]"}`}
+            ${isOpen ? "right-0" : "right-[-100%]"}`}
             >
                 <img
                     className="cursor-pointer absolute top-5 right-5 h-[31px] w-8"
