@@ -11,31 +11,29 @@ const NavBar = () => {
     };
 
     return (
-        <nav className="flex items-center justify-between p-5">
+        <nav className="sticky top-0 bg-off-white left-0 flex items-center justify-between p-5 lg:px-8">
             <div>
-                <Link to="/home">
+                <Link to="/">
                     <img src={logo} alt="logo" />
                 </Link>
             </div>
-
-            <div className="hidden md:flex md:gap-[10px]">
-                <NavLink to="/home">Home</NavLink>
+            <div className="hidden lg:flex lg:gap-[50px] lg:text-very-dark-blue">
+                <NavLink to="/">Home</NavLink>
                 <NavLink to="/">New</NavLink>
                 <NavLink to="/">Popular</NavLink>
                 <NavLink to="/">Trending</NavLink>
                 <NavLink to="/">Categories</NavLink>
             </div>
-
             <div
-                className="cursor-pointer flex md:hidden"
+                className="cursor-pointer flex lg:hidden"
                 onClick={handleClick}
             >
                 <img src={hamburgerMenu} alt="hamburger-menu" />
             </div>
 
             <div
-                className={`absolute right-0 bg-white shadow-2xl top-0 w-[60vw] h-screen overflow-hidden transition-all duration-300 ease-in-out md:hidden
-            ${isOpen ? "right-0" : "right-[-100%]"}`}
+                className={`absolute right-0 bg-white shadow-[-100px_2px_2px_200px_#00000054] top-0 w-[60vw] h-screen overflow-hidden transition-all duration-300 ease-in-out lg:hidden
+            ${isOpen ? "right-0" : "right-[-120%]"}`}
             >
                 <img
                     className="cursor-pointer absolute top-5 right-5 h-[31px] w-8"
@@ -43,8 +41,8 @@ const NavBar = () => {
                     alt="hamburger-menu-close"
                     onClick={handleClick}
                 />
-                <div className="flex flex-col justify-center gap-[20px] mt-[20vh] p-5 font-normal text-lg text-dark-grayish-blue md:hidden">
-                    <NavLink to="/home" onClick={handleClick}>
+                <div className="flex flex-col justify-center gap-[20px] mt-[20vh] p-5 font-normal text-lg text-dark-grayish-blue lg:hidden">
+                    <NavLink to="/" onClick={handleClick}>
                         Home
                     </NavLink>
                     <NavLink to="/" onClick={handleClick}>
