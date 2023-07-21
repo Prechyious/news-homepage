@@ -25,15 +25,15 @@ Users should be able to:
 
 ### Desktop
 
-![](./screenshot/News-homepage-desktop.png)
+![](./screenshots/News-homepage-desktop.png)
 
 ### Mobile
 
-![](./News-homepage-mobile.png)
+![](./screenshots/News-homepage-mobile.png)
 
 ### Mobile Navigation
 
-![](./News-homepage-mobile-nav.png)
+![](./screenshots/News-homepage-mobile-nav.png)
 
 ### Links
 
