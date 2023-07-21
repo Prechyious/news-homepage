@@ -6,7 +6,7 @@ import controller from "../assets/images/image-gaming-growth.jpg";
 
 const Main = () => {
     return (
-        <main className="p-6">
+        <main className="px-6 md:p-6">
             <div className="lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:grid-flow-col lg:gap-10 lg:h-[600px]">
                 <div className="lg:col-span-2">
                     <img

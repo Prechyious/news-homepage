@@ -23,7 +23,17 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+### Desktop
+
+![](./screenshot/News-homepage-desktop.png)
+
+### Mobile
+
+![](./News-homepage-mobile.png)
+
+### Mobile Navigation
+
+![](./News-homepage-mobile-nav.png)
 
 ### Links
 

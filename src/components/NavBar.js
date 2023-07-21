@@ -11,7 +11,7 @@ const NavBar = () => {
     };
 
     return (
-        <nav className="sticky top-0 bg-off-white left-0 flex items-center justify-between p-5 lg:px-8">
+        <nav className="sticky top-0 left-0 bg-off-white flex items-center justify-between p-5 lg:px-8">
             <div>
                 <Link to="/">
                     <img src={logo} alt="logo" />
@@ -32,7 +32,12 @@ const NavBar = () => {
             </div>
 
             <div
-                className={`absolute right-0 bg-white shadow-[-100px_2px_2px_200px_#00000054] top-0 w-[60vw] h-screen overflow-hidden transition-all duration-300 ease-in-out lg:hidden
+                className={`absolute right-0 bg-white
+                ${
+                    isOpen
+                        ? "shadow-[-100px_2px_2px_200px_#00000065]"
+                        : "shadow-none"
+                }  top-0 w-[60vw] h-screen overflow-hidden transition-all duration-300 ease-in-out lg:hidden
             ${isOpen ? "right-0" : "right-[-120%]"}`}
             >
                 <img
@@ -41,7 +46,7 @@ const NavBar = () => {
                     alt="hamburger-menu-close"
                     onClick={handleClick}
                 />
-                <div className="flex flex-col justify-center gap-[20px] mt-[20vh] p-5 font-normal text-lg text-dark-grayish-blue lg:hidden">
+                <div className="flex flex-col justify-center gap-[20px] mt-[20vh] p-5 font-medium text-lg text-dark-grayish-blue lg:hidden">
                     <NavLink to="/" onClick={handleClick}>
                         Home
                     </NavLink>
